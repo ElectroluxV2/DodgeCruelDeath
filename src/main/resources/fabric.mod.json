@@ -1,0 +1,31 @@
+{
+	"schemaVersion": 1,
+	"id": "dodge-cruel-death",
+	"version": "${version}",
+	"name": "DodgeCruelDeath",
+	"description": "Extends items time to live dropped on death to 38,767 game ticks (vanilla is 6,000)",
+	"authors": [
+		"Mateusz Budzisz"
+	],
+	"contact": {
+		"homepage": "https://github.com/ElectroluxV2/DodgeCruelDeath",
+		"sources": "https://github.com/ElectroluxV2/DodgeCruelDeath"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dodge-cruel-death/icon.png",
+	"environment": "server",
+	"entrypoints": {
+		"server": [
+			"com.github.electroluxv2.dodgecrueldeath.ExampleMod"
+		]
+	},
+	"mixins": [
+		"dodge-cruel-death.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.14.22",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	}
+}
