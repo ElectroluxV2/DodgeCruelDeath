@@ -16,7 +16,7 @@
 	"environment": "server",
 	"entrypoints": {
 		"server": [
-			"com.github.electroluxv2.dodgecrueldeath.ExampleMod"
+			"com.github.electroluxv2.dodgecrueldeath.DodgeCruelDeathServerMod"
 		]
 	},
 	"mixins": [
