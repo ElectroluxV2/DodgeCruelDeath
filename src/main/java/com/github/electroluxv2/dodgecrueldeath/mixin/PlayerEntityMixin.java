@@ -17,7 +17,7 @@ public abstract class PlayerEntityMixin extends LivingEntity {
         super(entityType, world);
     }
 
-    @Inject(method = "dropItem*", at = @At("RETURN"))
+    @Inject(method = "dropItem(Lnet/minecraft/item/ItemStack;ZZ)Lnet/minecraft/entity/ItemEntity;", at = @At("RETURN"))
     protected void onDropItem(final ItemStack stack, final boolean throwRandomly, final boolean retainOwnership, final CallbackInfoReturnable<ItemEntity> cir) {
         if (this.isAlive()) return;
 
